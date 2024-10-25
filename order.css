@@ -1,0 +1,92 @@
+/* Order */
+
+.order{
+    width: 100%;
+    height: 100vh;
+    margin-top: 80px;
+    padding: 70px 0;
+    /* background-image: url(Images/bg.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+
+.order h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 55px;
+}
+
+.order h1 span{
+    /* margin-top: 15px; */
+    color: white;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.order h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.order .order_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order .order_main .order_image img{
+    width: 500px;
+    height: 400px;
+}
+
+.order .order_main form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.order .order_main form .input p{
+    line-height: 25px;
+}
+
+.order .order_main form .input{
+    margin: 5px;
+}
+
+.order .order_main form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+}
+
+
+.order .order_main form .input input:focus{
+    border: 2px solid rgb(41, 39, 39) ;
+}
+
+.order .order_main form .order_btn{
+    padding: 10px 0;
+    background: black;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px){
+    .order{
+        max-width: 100%;
+    }
+}
